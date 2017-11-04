@@ -46,12 +46,16 @@
             $(() => {
                 
                 $('#header-btn').on('click', function(e) {
+                    if ($(window).scrollTop() < 120) {
+                        $('.header').toggleClass('header-fill');
+                    }
                     $('#header-menu').toggleClass('active');
                     $('.nav-btn').toggleClass('active');
                 });
 
                 // Hide menu after clicking menu item
                 $('.dropdown-menu li').on('click', function(e) {
+                    $('.header').removeClass('header-fill');
                     $('#header-menu').removeClass('active');
                     $('.nav-btn').removeClass('active');
                 });
@@ -78,7 +82,7 @@
                 <div class="header header-fixed unselectable header-animated">
                     <div class="header-brand">
                         <div class="nav-item no-hover">
-                            <h6 class="title">Logo</h6>
+                            <h6 class="title">Nick Calaway</h6>
                         </div>
                         <div class="nav-item nav-btn" id="header-btn">
                             <span></span>
@@ -98,7 +102,7 @@
                         <div class="nav-item text-center">
                             <a href="#">
                                 <span class="icon">
-                                    <i class="fa fa-slack" aria-hidden="true"></i>
+                                    <i class="fa fa-bitcoin" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
@@ -151,27 +155,39 @@
         <div id="splash-img" class="hero fullscreen hero-img parallax-img">
             <div class="hero-body">
                 <div class="content text-center">
-                    <h3 class="uppercase white title">Easily create beautiful splash screens</h3>
-                    <h5 class="uppercase white sub-title faded">Only 6 lines needed and no additional CSS</h5>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h5 class="uppercase white sub-title faded">I code, therefore I am</h5>
                 </div>
             </div>
         </div>
 
 
-            <div class="row">
-                <div class="col-6 offset-3">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="content">
-                            <div class="row">
-                                <img src="https://maxcdn.icons8.com/Share/icon/Logos//chrome1600.png" class="level" id="projectlogo" />
-                                <p id="projectname" class="title level">Google Chrome</p>
-                                <p>Hello here is some text for this card wrapped inside a link.</p>
-                            </div>
-                        </div>
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-image" style="background-image: url(assets/images/code_example.png)"></div>
+                    </div>
+                    <div class="content">
+                        <p>I love coding! There is always something new to learn and always a way to push forward. Below are a few examples of applications that I either wrote by myself or in collaboration with some very talented people.</p>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </body>
 </html>
