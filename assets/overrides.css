@@ -17,3 +17,7 @@
     padding: 0px 2rem;
     transition: all 0.3s ease 0s;
 }
+
+#splash-img {
+    background-image: url("./images/IMG_20170929_234444.jpg")
+}
