@@ -15,7 +15,7 @@
 
         <!-- CSS Overrides -->
         <link rel="stylesheet" href="assets/overrides.css">
-        
+
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
@@ -31,7 +31,7 @@
                 } else {
                     $('.header').removeClass('header-fill');
                 }
-        
+
                 $(window).scroll(function() {
                     if ($(window).scrollTop() >= 120) {
                         $('.header').addClass('header-fill');
@@ -44,7 +44,7 @@
 
         <script type="text/javascript">// Show dropdown when clicked
             $(() => {
-                
+
                 $('#header-btn').on('click', function(e) {
                     if ($(window).scrollTop() < 120) {
                         $('.header').toggleClass('header-fill');
@@ -77,19 +77,19 @@
 
     </head>
     <body>
-        
+
         <div class="container-fluid">
-                <div class="header header-fixed unselectable header-animated">
-                    <div class="header-brand">
-                        <div class="nav-item no-hover">
-                            <h6 class="title">Nick Calaway</h6>
-                        </div>
-                        <div class="nav-item nav-btn" id="header-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+            <div class="header header-fixed unselectable header-animated">
+                <div class="header-brand">
+                    <div class="nav-item no-hover">
+                        <h6 class="title">Nick Calaway</h6>
                     </div>
+                    <div class="nav-item nav-btn" id="header-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
                 <div class="header-nav" id="header-menu">
                     <div class="nav-left">
                         <div class="nav-item text-center">
@@ -122,7 +122,7 @@
                             </ul>
                         </div>
                     </div>
-        
+
                     <div class="nav-right">
                         <div class="nav-item selected">
                             <a href="#">Selected</a>
@@ -130,7 +130,7 @@
                         <div class="nav-item">
                             <a href="#">Link 1</a>
                         </div>
-            
+
                         <div class="nav-item has-sub toggle-hover" id="dropdown">
                             <a class="nav-dropdown-link">Animated</a>
                             <ul class="dropdown-menu dropdown-animated" role="menu">
@@ -149,45 +149,158 @@
                         </div>
                     </div>
                 </div>
-        </div>
-
-
-        <div id="splash-img" class="hero fullscreen hero-img parallax-img">
-            <div class="hero-body">
-                <div class="content text-center">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h5 class="uppercase white sub-title faded">I code, therefore I am</h5>
-                </div>
             </div>
-        </div>
 
 
-        <div class="row">
-            <div class="col-6 offset-3">
-                <div class="card">
-                    <div class="card-container">
-                        <div class="card-image" style="background-image: url(assets/images/code_example.png)"></div>
-                    </div>
-                    <div class="content">
-                        <p>I love coding! There is always something new to learn and always a way to push forward. Below are a few examples of applications that I either wrote by myself or in collaboration with some very talented people.</p>
+            <div id="splash-img" class="hero fullscreen hero-img parallax-img">
+                <div class="hero-body">
+                    <div class="content text-center">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <h5 class="uppercase white sub-title faded">Hello, World!   ;-)</h5>
                     </div>
                 </div>
             </div>
-        </div>
-    </body>
-</html>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/code_example.png)"></div>
+                        </div>
+                        <div class="content">
+                            <p>I love coding! There is always something new to learn and always a way to push forward. Below are a few examples of applications that I either wrote by myself or in collaboration with some very talented people.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">InterStock</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Closing bell prices for stocks traded on international exchanges.</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="https://burningserenity.github.io/InterStock">App</button>
+                            <button class="btn" href="https://github.com/burningserenity/InterStock">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">Fight Card Scraper</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Web scraper written in Python for getting upcoming UFC fights.</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="http://safe-bet.herokuapp.com/">App</button>
+                            <button class="btn" href="https://github.com/yvannaharris/fight-card-/blob/master/scraping/ufc_upcoming_scraper.py">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">Speller</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Spellchecker written in C.</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="https://github.com/burningserenity/speller">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">Burger</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Proof-of-Concept Demonstrating the use of Sequelize ORM on the backend</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="https://mighty-river-64651.herokuapp.com/">App</button>
+                            <button class="btn" href="https://github.com/burningserenity/burger-sequelize">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">Monty Python Trivia Game</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>A trivia game in the theme of Monty Python and the Holy Grail</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="https://burningserenity.github.io/TriviaGame/">App</button>
+                            <button class="btn" href="https://github.com/burningserenity/TriviaGame">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-container">
+                            <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
+                            <div class="title-container">
+                                <p class="title">Tweet Sentiments</p>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p>Python app for analyzing positive and negative connotations of Twitter users' tweets.</p>
+                        </div>
+                        <div class="action-bar center">
+                            <button class="btn" href="https://tweet-sentiments.herokuapp.com/">App</button>
+                            <button class="btn" href="https://github.com/burningserenity/Sentiments">Source</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
