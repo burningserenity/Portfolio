@@ -28,15 +28,19 @@
 
                 if ($(window).scrollTop() >= 120) {
                     $('.header').addClass('header-fill');
+                    $('#clicky-menu').css({'background-color': '#EEE'});
                 } else {
                     $('.header').removeClass('header-fill');
+                    $('#clicky-menu').css({'background-color': 'transparent'});
                 }
 
                 $(window).scroll(function() {
                     if ($(window).scrollTop() >= 120) {
                         $('.header').addClass('header-fill');
+                        $('#clicky-menu').css({'background-color': '#EEE'});
                     } else {
                         $('.header').removeClass('header-fill');
+                        $('#clicky-menu').css({'background-color': 'transparent'});
                     }
                 });
             });
