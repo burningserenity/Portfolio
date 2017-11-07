@@ -12,12 +12,24 @@
 }
 
 .header-fill {
-    background-color: #FFF;
-    box-shadow: 10px 1px 5px #DDD;
+    background-color: #EEE;
+    box-shadow: 10px 1px 5px #CCC;
     padding: 0px 2rem;
     transition: all 0.3s ease 0s;
 }
 
 #splash-img {
-    background-image: url("./images/IMG_20170929_234444.jpg")
+    background-image: url("../images/flower.jpg")
+}
+
+.nav-item {
+    color: darkgoldenrod;
+}
+
+a {
+    color: darkgoldenrod;
+}
+
+a:hover {
+    color: silver;
 }
