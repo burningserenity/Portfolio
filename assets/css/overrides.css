@@ -37,3 +37,11 @@ a:hover {
 #my_email {
     background-color: gold;
 }
+
+.card-image {
+    background-position: center;
+}
+
+#header-btn > span{
+    background-color: darkgoldenrod;
+}

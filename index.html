@@ -88,8 +88,21 @@
                     try {
                         var successful = document.execCommand('copy');
                         var msg = successful ? 'successful' : 'unsuccessful';
+                        $("#my_email").addClass('text-success input-success');
+                        $("#my_email").val("Copied to clipboard");
+                        window.setTimeout(function() {
+                            $("#my_email").removeClass('text-success input-success');
+                            $("#my_email").val("nfcalaway@mailbit.io");
+                        }, 1000);
                         console.log('Copying text command was ' + msg);
                     } catch (err) {
+                        $("#my_email").addClass('text-error input-error');
+                        $("#my_email").val("Unable to copy, try doing it manually");
+                        window.setTimeout(function() {
+                            $("#my_email").removeClass('text-error input-error');
+                            $("#my_email").val("nfcalaway@mailbit.io");
+                        }, 1250);
+
                         console.log('Oops, unable to copy');
                     }
                 });
