@@ -73,6 +73,24 @@
                 });
             });
         </script>
+        <script type="text/javascript">
+            $(() => {
+                var copyTextareaBtn = $('#clipboardBtn');
+
+                copyTextareaBtn.on('click', function(event) {
+                    var copyTextarea = document.querySelector('#my_email');
+                    copyTextarea.select();
+
+                    try {
+                        var successful = document.execCommand('copy');
+                        var msg = successful ? 'successful' : 'unsuccessful';
+                        console.log('Copying text command was ' + msg);
+                    } catch (err) {
+                        console.log('Oops, unable to copy');
+                    }
+                });
+            })
+        </script>
 
 
     </head>
@@ -82,7 +100,7 @@
             <div class="header header-fixed unselectable header-animated">
                 <div class="header-brand">
                     <div class="nav-item no-hover">
-                        <h6 class="title my-name">Nick Calaway</h6>
+                        <h6 class="title">Nick Calaway</h6>
                     </div>
                     <div class="nav-item nav-btn" id="header-btn">
                         <span></span>
@@ -93,58 +111,37 @@
                 <div class="header-nav" id="header-menu">
                     <div class="nav-left">
                         <div class="nav-item text-center">
-                            <a href="#">
+                            <a href="https://github.com/burningserenity" target="_blank">
                                 <span class="icon">
                                     <i class="fa fa-github" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
                         <div class="nav-item text-center">
-                            <a href="#">
+                            <a href="https://linkedin.com/in/nicholas-carlton" target="_blank">
                                 <span class="icon">
-                                    <i class="fa fa-bitcoin" aria-hidden="true"></i>
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </div>
                         <div class="nav-item text-center">
-                            <a href="#">
-                                <span class="icon">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="nav-item has-sub toggle-hover" id="dropdown">
-                            <a class="nav-dropdown-link">DropDown</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li role="menu-item"><a href="#">First Item</a></li>
-                                <li role="menu-item"><a href="#">Second Item</a></li>
-                                <li role="menu-item"><a href="#">Third Item</a></li>
-                            </ul>
+                            <div class="form-group">
+                                <input id="my_email" type="search" class="form-group-input" readonly="" value="nfcalaway@mailbit.io"></input>
+                                <button id="clipboardBtn" class="form-group-btn"><i class="fa fa-clipboard" aria-hidden="true"></i></button>
+                            </div>
                         </div>
                     </div>
 
                     <div class="nav-right">
-                        <div class="nav-item selected">
-                            <a href="#">Selected</a>
-                        </div>
-                        <div class="nav-item">
-                            <a href="#">Link 1</a>
-                        </div>
-
                         <div class="nav-item has-sub toggle-hover" id="dropdown">
-                            <a class="nav-dropdown-link">Animated</a>
+                            <a class="nav-dropdown-link">Go to App</a>
                             <ul class="dropdown-menu dropdown-animated" role="menu">
-                                <li role="menu-item"><a href="#">First Item</a></li>
-                                <li role="menu-item"><a href="#">Second Item</a></li>
-                                <li role="menu-item"><a href="#">Third Item</a></li>
-                            </ul>
-                        </div>
-                        <div class="nav-item has-sub" id="dropdown">
-                            <a class="nav-dropdown-link">Click Me</a>
-                            <ul class="dropdown-menu" id="clicky-menu" role="menu">
-                                <li role="menu-item"><a href="#">First Item</a></li>
-                                <li role="menu-item"><a href="#">Second Item</a></li>
-                                <li role="menu-item"><a href="#">Third Item</a></li>
+                                <li role="menu-item"><a href="#InterStock">InterStock</a></li>
+                                <li role="menu-item"><a href="#fightCardScraper">Fight Card Scraper</a></li>
+                                <li role="menu-item"><a href="#Speller">Speller</a></li>
+                                <li role="menu-item"><a href="#Burger">Burger</a></li>
+                                <li role="menu-item"><a href="#Trivia">Monty Python Trivia</a></li>
+                                <li role="menu-item"><a href="#Sentiments">Tweet Sentiments</a></li>
                             </ul>
                         </div>
                     </div>
@@ -183,7 +180,7 @@
 
             <div class="row">
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="InterStock">
                         <div class="card-container">
                             <div class="card-image" style="background-image: url(assets/images/s2.reutersmedia.net.jpeg)"></div>
                             <div class="title-container">
@@ -200,7 +197,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="fightCardScraper">
                         <div class="card-container">
                             <div class="card-image" style="background-image: url(assets/images/rory-macdonald-stephen-thompson-ufc-fight-night-89-1.jpg)"></div>
                             <div class="title-container">
@@ -217,7 +214,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="card">
+                    <div class="card" id="Speller">
                         <div class="card-container">
                             <div class="card-image" style="background-image: url(assets/images/spellcheck.jpg)"></div>
                             <div class="title-container">
@@ -239,7 +236,7 @@
                 </div>
                 <div class="row">
                     <div class="col-4">
-                        <div class="card">
+                        <div class="card" id="Burger">
                             <div class="card-container">
                                 <div class="card-image" style="background-image: url(assets/images/20160428-memorial-day-burger-recipes-roundup-19.jpg)"></div>
                                 <div class="title-container">
@@ -256,7 +253,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card">
+                        <div class="card" id="Trivia">
                             <div class="card-container">
                                 <div class="card-image" style="background-image: url(assets/images/monty-python-image-1.jpg)"></div>
                                 <div class="title-container">
@@ -273,7 +270,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <div class="card">
+                        <div class="card" id="Sentiments">
                             <div class="card-container">
                                 <div class="card-image" style="background-image: url(assets/images/Twitter-Sentiment-analysis.jpg)"></div>
                                 <div class="title-container">

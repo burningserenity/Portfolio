@@ -33,3 +33,7 @@ a {
 a:hover {
     color: silver;
 }
+
+#my_email {
+    background-color: gold;
+}
